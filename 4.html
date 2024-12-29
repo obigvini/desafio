@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionamento para o Desafio</title>
+    <script type="text/javascript">
+        // Função para redirecionar para o WhatsApp com a mensagem
+        function redirecionarParaWhatsApp() {
+            var numeroWhatsApp = "61981256023"; // Seu número de WhatsApp (incluindo o DDD)
+            var mensagem = "Olá, Eu quero participar do Desafio! :)"; // Nova mensagem personalizada
+            var urlWhatsApp = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensagem);
+            window.location.href = urlWhatsApp; // Redireciona para o WhatsApp
+        }
+
+        // Aguardar 1 segundo (1000 milissegundos) antes de redirecionar
+        setTimeout(redirecionarParaWhatsApp, 1000);
+    </script>
+</head>
+<body>
+    <h1>Você vai ser direcionado para participar do desafio!</h1>
+    <p>Aguarde um momento...</p>
+</body>
+</html>
+
+git add index.html
+git commit -m "Movendo o index.html para a raiz"
+git push
